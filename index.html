@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>BoardGameFilter</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Boardgame Catalogue</h1>
+		<p>Welcome to the <b>Example Boardgame Catalogue</b>. You can search the collection by number of players you have or search for a game directly with the search bar.</p>
+      <div class="myBtnContainer">
+        <button class="btn active" onclick="playerFilter('all')"> Show all</button>
+        <button class="btn" onclick="playerFilter(1)"> 1 player</button>
+        <button class="btn" onclick="playerFilter(2)"> 2 players</button>
+        <button class="btn" onclick="playerFilter(3)"> 3 players</button>
+        <button class="btn" onclick="playerFilter(4)"> 4 players</button>
+        <button class="btn" onclick="playerFilter(5)"> 5 players</button>
+        <button class="btn" onclick="playerFilter(6)"> 6+ players</button>
+      </div>
+      <br>
+      <input type="text" id="myInput" onkeyup="nameFilter()" placeholder="Search for names..">
+      <table id="myTable">
+        <tr class="header">
+          <th style="width:50%;">Name</th>
+          <th style="width:25%;">Minimum Players</th>
+          <th style="width:25%;">Maximum Players</th>
+        </tr>
+      </table>
+      <!--Read in games now that the table is built-->
+      <script>
+        readData();
+        playerFilter('all');
+      </script>
+    </div>
+  </body>
+</html>

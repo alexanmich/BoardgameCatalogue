@@ -1,0 +1,136 @@
+/* Full-width input fields */
+input[type=text], input[type=number] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background-color: #ddd;
+}
+
+/* Set a style for the submit button */
+.addbtn {
+  background-color: #f4acb7;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.addbtn:hover {
+  opacity: 1;
+}
+
+
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #ffe5d9;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 1%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #696d7d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+h1 {
+  text-align: center;
+  border-bottom-style: solid;
+  border-block-end-width: 100%
+}
+
+p {
+  text-align: justify;
+}
+
+.container {
+  background-color: #fff;
+  margin: auto;
+  width: 50%;
+  padding: 1%;
+  
+}
+
+.myBtnContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.btn.active {
+  border: none;
+  outline: none;
+  padding: 12px 1%;
+  background-color: #ddd;
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 1%;
+  background-color: #ddd;
+}
+
+.btn:hover {
+  background-color: #f4acb7;
+}
+
+#myInput {
+  width: 98%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 1%; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myTable {
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 18px; /* Increase font-size */
+}
+
+#myTable th, #myTable td {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+}
+
+#myTable tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header {
+  /* Add a purple background color to the table header */
+  background-color: #f4acb7;
+}
+
+#myTable tr:hover {
+  /* Add a grey background color on hover */
+  background-color: #f4acb7;
+}
+
+/* Responsive layout - makes the buttons stack into a column, instead of a row and increase the container to full screen */
+@media (max-width: 800px) {
+  .btn.active, .btn{
+    flex: 100%;
+  }
+  .container{
+    width: 98%;
+  }
+  .signin{
+    width: 98%;
+  }
+}
+
